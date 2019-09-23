@@ -1,0 +1,100 @@
+@import url("https://use.typekit.net/kuz5htf.css");
+
+/* website*/
+
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    width: 197vw;
+    grid-column-gap: 1em;
+    background-color: #051427;
+}
+
+.stanzas {
+    position: relative;
+    width: 98vw;
+}
+
+.top{
+    margin-top: 1.2em;
+}
+
+h1{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    color: #FFA927;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 10em;
+    font-kerning: auto;
+    text-align: right;
+    letter-spacing: .1em;
+    line-height: .7em;
+    word-spacing: .01em;
+
+}
+
+h2{
+    line-height: .6em;
+    font-size: 4.5em;
+    text-align: right;
+    color: #F0C3ED;
+    font-family: mrs-eaves, serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.dot{
+    position: absolute;
+    right: .5vw;
+    top: 53vh;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: white;
+    float: left;
+    z-index: 1;
+}
+
+.dot_two{
+    top: 54vh;
+    right: 0vw;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #051427;
+    float: left;
+    position: absolute;
+    z-index: 2;
+}
+
+p{
+    color: orange;
+    font-family: mrs-eaves, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* smart phone*/
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: blue;
+    }
+    
+    p {
+        color: bisque;
+    }
+}
+
+/* tablet*/
+@media only screen and (min-width:800px) and (max-width: 1280px){
+    body{
+        background-color: aqua;
+    }
+    p{
+        color: blueviolet;
+    }
+}
