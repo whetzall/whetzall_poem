@@ -5,10 +5,10 @@
 
 body{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr .5fr;
     grid-template-rows: 100vh;
-    width: 197vw;
-    grid-column-gap: 1em;
+    width: 150vw;
+    grid-column-gap: 4em;
     background-color: #051427;
 }
 
@@ -30,7 +30,7 @@ h1{
     font-kerning: auto;
     text-align: right;
     letter-spacing: .1em;
-    line-height: .7em;
+    line-height: 1.5em;
     word-spacing: .01em;
 
 }
@@ -76,17 +76,160 @@ p{
     font-style: normal;
 }
 
+.right{
+    position: relative;
+}
+
+.box_pink {
+    position: absolute;
+    background-color: #F0C3ED;
+    height: 85vh;
+    width: 27vw;
+    top: 9vh;
+}
+
+.box_orange {
+    position: absolute;
+    background-color: #FFA927;
+    height: 85vh;
+    width: 27vw;
+    top: 4vh;
+    left: 3vw;
+}
+
+.paragraphs {
+    position: absolute;
+    background-color: #051427;
+    height: 80vh;
+    width: 24vw;
+    top: 9vh;
+    left: 3vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+p{
+    margin-left: 1em;
+    line-height: .6em;
+    font-size: 2.2em;
+    text-align: left;
+    color: white;
+    font-family: mrs-eaves, serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.published{
+    position: absolute;
+    left: 32vw;
+    top: 90vh;
+}
 
 
 /* smart phone*/
 @media only screen and (max-width: 800px) {
+
     body {
-        background-color: blue;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100vh;
+        width: 200vw;
+        //height: 100vh;
+        background-color: white;
+    }  
+
+    .stanzas {
+
     }
     
-    p {
-        color: bisque;
+    
+    h1{ 
+        font-family: mrs-eaves, serif;
+        color: #FFA927;
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 1em;
+        font-kerning: auto;
+        text-align: left;
+        letter-spacing: .1em;
+        line-height: .7em;
+        word-spacing: .01em;
+        top: 30vh;
+        left: 2vw;
+    
     }
+    
+    h2{
+        line-height: .6em;
+        font-size: 1em;
+        text-align: right;
+        color: #E2BC90;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+    }
+    
+
+
+    
+    .right{
+        position: relative;
+        background-color:#718EBB;
+    }
+    
+
+    .paragraphs {
+        position: absolute;
+        background-color: #718EBB;
+        height: 90vh;
+        width: 80vw;
+        top: 9vh;
+        left: 3vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+
+    p{
+        margin-left: 1em;
+        line-height: .6em;
+        font-size: 1em;
+        text-align: left;
+        color: #E2BC90;
+        font-family: mrs-eaves, serif;
+        font-weight: 400;
+        font-style: normal;  
+    }
+
+    
+    .published{
+        position: absolute;
+        left: 32vw;
+        top: 90vh;
+    }
+    
+        
+    .dot{
+        display: none;
+    }
+    
+    .dot_two{
+        display: none;
+    }
+    
+    .box_orange{
+        display: none;
+    }
+    
+    .box_pink{
+        display: none;
+    }
+    
+    
+
 }
 
 /* tablet*/
