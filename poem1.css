@@ -26,7 +26,7 @@ h1{
     color: #FFA927;
     font-weight: lighter;
     font-style: italic;
-    font-size: 10em;
+    font-size: 5em;
     font-kerning: auto;
     text-align: right;
     letter-spacing: .1em;
@@ -48,9 +48,9 @@ h2{
 .dot{
     position: absolute;
     right: .5vw;
-    top: 53vh;
-    height: 250px;
-    width: 250px;
+    top: 60vh;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     background-color: white;
     float: left;
@@ -58,10 +58,10 @@ h2{
 }
 
 .dot_two{
-    top: 54vh;
-    right: 0vw;
-    height: 200px;
-    width: 200px;
+    top: 62vh;
+    right: .4vw;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     background-color: #051427;
     float: left;
@@ -69,12 +69,6 @@ h2{
     z-index: 2;
 }
 
-p{
-    color: orange;
-    font-family: mrs-eaves, serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 .right{
     position: relative;
@@ -112,7 +106,7 @@ p{
 p{
     margin-left: 1em;
     line-height: .6em;
-    font-size: 2.2em;
+    font-size: 1em;
     text-align: left;
     color: white;
     font-family: mrs-eaves, serif;
@@ -122,7 +116,8 @@ p{
 
 .published{
     position: absolute;
-    left: 32vw;
+    width: 9vw;
+    left: 28vw;
     top: 90vh;
 }
 
@@ -138,30 +133,35 @@ p{
         background-color: white;
         padding: 0;
         margin: 0;
+        column-gap: 0em;
     }  
 
-    .stanzas {
-
+    .stanzas { 
+    position: relative;
+    background-color: #5D0D30;
+    width: 100vw;
     }
     
     
     h1{ 
+        position: absolute;
         font-family: mrs-eaves, serif;
         color: #FFA927;
         font-weight: lighter;
-        font-style: italic;
-        font-size: 1em;
+        font-style: normal;
+        font-size: 1.4em;
         font-kerning: auto;
         text-align: left;
         letter-spacing: .1em;
-        line-height: .7em;
+        line-height: 1em;
         word-spacing: .01em;
         top: 30vh;
-        left: 2vw;
+        left: 20vw;
     
     }
     
     h2{
+        position: absolute;
         line-height: .6em;
         font-size: 1em;
         text-align: right;
@@ -169,10 +169,20 @@ p{
         font-family: "Helvetica Neue", Helvetica, sans-serif;
         font-weight: 400;
         font-style: normal;  
+        top: 38.5vh;
+        right: 5vw;
     }
     
 
-
+    .box_pink{
+        position: absolute;
+        height: .5vh;
+        width: 100vw;
+        left: -58.4vw;
+        top: 44vh;
+        background-color: white;
+        z-index: 30;
+    }
     
     .right{
         position: relative;
@@ -183,9 +193,9 @@ p{
     .paragraphs {
         position: absolute;
         background-color: #718EBB;
-        height: 90vh;
+        height: 50vh;
         width: 80vw;
-        top: 9vh;
+        top: 44vh;
         left: 3vw;
         display: grid;
         grid-template-columns: 1fr;
@@ -196,7 +206,7 @@ p{
     p{
         margin-left: 1em;
         line-height: .6em;
-        font-size: 1em;
+        font-size: .8em;
         text-align: left;
         color: #E2BC90;
         font-family: mrs-eaves, serif;
@@ -207,7 +217,8 @@ p{
     
     .published{
         position: absolute;
-        left: 32vw;
+        width: 40vw;
+        left: 60vw;
         top: 90vh;
     }
     
@@ -224,9 +235,7 @@ p{
         display: none;
     }
     
-    .box_pink{
-        display: none;
-    }
+
     
     
 
